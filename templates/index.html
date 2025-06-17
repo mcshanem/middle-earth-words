@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Words of Middle-earth</title>
+    <!-- Load Bootstrap-Flask CSS here -->
+    {{ bootstrap.load_css() }}
+    <!-- Load default CSS -->
+    <link href="{{ url_for('static', filename='css/default.css') }}" rel="stylesheet"/>
+</head>
+<body>
+<div class="d-flex flex-column vh-100 text-center">
+    <h1 class="display-4 mx-auto my-5">Words of Middle-earth</h1>
+    <div class="d-flex flex-row mx-auto my-auto column-gap-5">
+        <div>
+            <a href="{{url_for('get_quote', character=post.id) }}">
+                <img class="mb-4" src="{{ url_for('static', filename='img/aragorn-headshot.png') }}" width="200">
+                <h3>Aragorn</h3>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img class="mb-4" src="{{ url_for('static', filename='img/gandalf-headshot.png') }}" width="200">
+                <h3>Gandalf</h3>
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img class="mb-4" src="{{ url_for('static', filename='img/frodo-headshot.png') }}" width="200">
+                <h3>Frodo</h3>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Load Bootstrap-Flask JavaScript here -->
+{{ bootstrap.load_js() }}
+</body>
+</html>

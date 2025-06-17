@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'anironregular';
+    src: url('../fonts/anirm___-webfont.woff2') format('woff2'),
+         url('../fonts/anirm___-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    color: #c9a55a;
+    background-color: #354521;
+    font-family: 'anironregular'
+}
+
+a {
+    color: #c9a55a;
+    text-decoration: none;
+}
