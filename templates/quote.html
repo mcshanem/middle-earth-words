@@ -1,0 +1,17 @@
+{% include "header.html" %}
+
+<div class="container my-auto">
+    <div class="row justify-content-center">
+        <div class="col"></div>
+        <div class="col-auto">
+            <div class="d-flex flex-column">
+                <h2 class="text-start">{{ quote }}</h2>
+                <h4 class="mt-5 pe-5 text-end">{{ character | title }}</h4>
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+
+
+{% include "footer.html" %}
